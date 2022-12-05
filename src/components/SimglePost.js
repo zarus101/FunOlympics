@@ -52,14 +52,6 @@ const SinglePost=()=>{
                                 <CardBody>
                             <CardText>Posted by <b>{post.user.name}</b> on <b>{printDate(post.addedDate)}</b></CardText>
 
-                            <CardText>
-                                <span className="text-muted">{post.category.categoryTitle}</span>
-
-                            </CardText>
-
-                            <CardText className="mt-3">
-                                <h3>{post.title}</h3>
-                            </CardText>
                          
 
                             <CardText className="mt-5" dangerouslySetInnerHTML={{__html:post.content}}>
